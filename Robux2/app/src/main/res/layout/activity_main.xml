@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"></RelativeLayout>
+
+    <Button
+        android:id="@+id/btnStartWorking"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Start Working"
+        android:textColor="@android:color/white"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tvUserAgrement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStartWorking"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textStyle="italic|bold"
+        android:text="User agreements"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:id="@+id/cbUserAgreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUserAgrement"
+        android:layout_centerInParent="true"
+        android:text="I agree with the user agreement"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+</RelativeLayout>
