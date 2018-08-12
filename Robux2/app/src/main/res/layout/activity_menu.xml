@@ -28,6 +28,7 @@
             android:text="Game guide"
             android:textColor="@android:color/white"
             android:textSize="23sp"
+            android:visibility="invisible"
             android:textStyle="bold" />
 
         <Button

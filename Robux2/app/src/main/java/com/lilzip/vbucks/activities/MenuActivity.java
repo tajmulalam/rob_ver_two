@@ -1,17 +1,21 @@
-package com.lilzip.robux2.activities;
+package com.lilzip.vbucks.activities;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-import com.lilzip.robux2.R;
+import com.lilzip.vbucks.R;
 
 public class MenuActivity extends Activity implements View.OnClickListener {
 
     private Button btnGameGuide, btnTips, btnTricks, btnSquadTeam, btnVbucks;
+    private static final String ROBUX_URL = "http://bit.ly/2MAGJCw";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +60,8 @@ public class MenuActivity extends Activity implements View.OnClickListener {
         }
     }
     private void startVBucksActivity() {
-        startActivity(new Intent(MenuActivity.this, VBucksActivity.class));
+        //startActivity(new Intent(MenuActivity.this, VBucksActivity.class));
+        openWebPage(ROBUX_URL);
 
     }
 
@@ -77,5 +82,16 @@ public class MenuActivity extends Activity implements View.OnClickListener {
 
     private void startGameGuideActivity() {
         startActivity(new Intent(MenuActivity.this, GameGuideActivity.class));
+    }
+
+    public void openWebPage(String url) {
+        try {
+            Uri webpage = Uri.parse(url);
+            Intent myIntent = new Intent(Intent.ACTION_VIEW, webpage);
+            startActivity(myIntent);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(this, "No application can handle this request. Please install a web browser or check your URL.", Toast.LENGTH_LONG).show();
+            //e.printStackTrace();
+        }
     }
 }

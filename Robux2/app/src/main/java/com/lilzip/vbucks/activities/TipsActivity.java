@@ -1,16 +1,16 @@
-package com.lilzip.robux2.activities;
+package com.lilzip.vbucks.activities;
 
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.lilzip.robux2.R;
+import com.lilzip.vbucks.R;
 
-public class VBucksActivity extends Activity {
+public class TipsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vbucks);
+        setContentView(R.layout.activity_tips);
     }
 }

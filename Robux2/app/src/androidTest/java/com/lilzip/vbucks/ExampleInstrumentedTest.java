@@ -1,4 +1,4 @@
-package com.lilzip.robux2;
+package com.lilzip.vbucks;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

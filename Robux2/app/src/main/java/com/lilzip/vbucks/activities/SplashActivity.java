@@ -1,4 +1,4 @@
-package com.lilzip.robux2.activities;
+package com.lilzip.vbucks.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,8 +7,8 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import com.lilzip.robux2.R;
-import com.lilzip.robux2.utils.SharedPreferenceValue;
+import com.lilzip.vbucks.R;
+import com.lilzip.vbucks.utils.SharedPreferenceValue;
 
 
 public class SplashActivity extends Activity {

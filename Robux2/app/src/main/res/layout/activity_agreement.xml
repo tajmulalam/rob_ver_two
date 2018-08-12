@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/ic_bg"
     tools:context=".activities.AgreementActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#80000000"></RelativeLayout>
+
     <TextView
         android:id="@+id/tvLable"
         android:layout_width="wrap_content"
@@ -17,18 +19,24 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="User Agreement"
+        android:text="Terms and Conditions"
         android:textColor="@android:color/white"
         android:textSize="27sp" />
 
-    <TextView
-        android:id="@+id/tvAgreement"
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvLable"
-        android:gravity="center|left"
-        android:padding="10dp"
-        android:text="@string/agreement"
-        android:textColor="@android:color/white"
-        android:textSize="17sp" />
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/tvAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:text="@string/agreement"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+    </ScrollView>
 </RelativeLayout>

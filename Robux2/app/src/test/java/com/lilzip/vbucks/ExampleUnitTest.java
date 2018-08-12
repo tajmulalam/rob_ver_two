@@ -1,4 +1,4 @@
-package com.lilzip.robux2;
+package com.lilzip.vbucks;
 
 import org.junit.Test;
 
