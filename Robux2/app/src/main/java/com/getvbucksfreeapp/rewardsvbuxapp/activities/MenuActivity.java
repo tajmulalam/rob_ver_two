@@ -1,4 +1,4 @@
-package com.lilzip.vbucks.activities;
+package com.getvbucksfreeapp.rewardsvbuxapp.activities;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.lilzip.vbucks.R;
+import com.getvbucksfreeapp.rewardsvbuxapp.R;
 
 public class MenuActivity extends Activity implements View.OnClickListener {
 

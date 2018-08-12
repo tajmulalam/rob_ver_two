@@ -1,10 +1,11 @@
-package com.lilzip.vbucks.activities;
+package com.getvbucksfreeapp.rewardsvbuxapp.activities;
+
 
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.lilzip.vbucks.R;
+import com.getvbucksfreeapp.rewardsvbuxapp.R;
 
 public class GameGuideActivity extends Activity {
 

@@ -1,4 +1,4 @@
-package com.lilzip.vbucks;
+package com.getvbucksfreeapp.vbucks;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

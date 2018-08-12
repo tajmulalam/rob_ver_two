@@ -1,4 +1,4 @@
-package com.lilzip.vbucks;
+package com.getvbucksfreeapp.vbucks;
 
 import org.junit.Test;
 

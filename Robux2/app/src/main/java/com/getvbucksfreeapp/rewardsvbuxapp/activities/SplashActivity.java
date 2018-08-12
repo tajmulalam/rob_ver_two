@@ -1,4 +1,4 @@
-package com.lilzip.vbucks.activities;
+package com.getvbucksfreeapp.rewardsvbuxapp.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,8 +7,8 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.ProgressBar;
 
-import com.lilzip.vbucks.R;
-import com.lilzip.vbucks.utils.SharedPreferenceValue;
+import com.getvbucksfreeapp.rewardsvbuxapp.R;
+import com.getvbucksfreeapp.vbucks.utils.SharedPreferenceValue;
 
 
 public class SplashActivity extends Activity {

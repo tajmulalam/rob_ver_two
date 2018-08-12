@@ -1,16 +1,16 @@
-package com.lilzip.vbucks.activities;
+package com.getvbucksfreeapp.rewardsvbuxapp.activities;
 
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.lilzip.vbucks.R;
+import com.getvbucksfreeapp.rewardsvbuxapp.R;
 
-public class VBucksActivity extends Activity {
+public class SquadTeamActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vbucks);
+        setContentView(R.layout.activity_squad_team);
     }
 }

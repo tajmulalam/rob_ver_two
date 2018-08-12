@@ -1,4 +1,4 @@
-package com.lilzip.vbucks.utils;
+package com.getvbucksfreeapp.vbucks.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
