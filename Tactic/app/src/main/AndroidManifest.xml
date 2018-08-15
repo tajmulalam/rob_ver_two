@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.boombboomrobux.rewardapplication">
-    <!--com.lilzip.vbucks-->
-    <!--getvbucksfreeapp.rewardsvbuxapp-->
-    <!--com.getvbucksfreeapp.rewardsvbuxapp-->
-    <!--com.freerobuxappreward.rewardappforyou-->
-    <!--com.boombboomrobux.rewardapplication-->
+    package="com.tactic.adsapplication">
+
+    <!-- com.lilzip.vbucks -->
+    <!-- getvbucksfreeapp.rewardsvbuxapp -->
+    <!-- com.getvbucksfreeapp.rewardsvbuxapp -->
+    <!-- com.freerobuxappreward.rewardappforyou -->
+    <!-- com.boombboomrobux.rewardapplication -->
+    <!-- com.tactic.adsapplication -->
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_logo"
@@ -28,9 +30,7 @@
         <activity
             android:name=".activities.MenuActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity
-            android:name=".activities.AgreementActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".activities.AgreementActivity" />
         <activity
             android:name=".activities.RobuxGuideActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
@@ -45,7 +45,14 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
         <activity
             android:name=".activities.VBucksActivity"
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activities.MasterActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.SecondActivity" />
+        <activity android:name=".activities.ThirdActivity" />
+        <activity android:name=".activities.FourthActivity"></activity>
     </application>
 
 </manifest>

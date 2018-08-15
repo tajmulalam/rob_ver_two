@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    tools:context=".activities.MenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btnGameGuide"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+
+            android:background="@android:color/holo_green_dark"
+            android:padding="5dp"
+            android:text="ROBUX GUIDE"
+            android:textColor="@android:color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnTips"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btnGameGuide"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:padding="5dp"
+            android:text="TIPS"
+            android:textColor="@android:color/white"
+
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnTricks"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btnTips"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:padding="5dp"
+            android:text="TRICKS"
+            android:textColor="@android:color/white"
+
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSquadTeam"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btnTricks"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:padding="5dp"
+            android:text="Squad and Team"
+            android:textColor="@android:color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnVbucks"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btnSquadTeam"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:padding="5dp"
+            android:text="FREE ROBUX"
+            android:textColor="@android:color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

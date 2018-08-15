@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    tools:context=".activities.ThirdActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/ivLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_royel" />
+
+            <TextView
+                android:textColor="@android:color/white"
+
+                android:id="@+id/tvSecondDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivLabel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/third_page_first_paragraph"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tvSecondDetails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:id="@+id/tvThird_Second_Para_Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnNext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/third_page_second_paragraph"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnOpen"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tvThird_Second_Para_Details"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="Open"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
