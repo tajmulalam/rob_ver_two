@@ -1,4 +1,4 @@
-package com.tactic.adsapplication.activities;
+package com.gemscr.tactictop.activities;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -13,29 +13,28 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-import com.tactic.adsapplication.R;
+import com.gemscr.tactictop.R;
 
-public class ThirdActivity extends AppCompatActivity {
-//    http://bit.ly/2P8Qf1r
-private static final String ROBUX_URL = "http://bit.ly/2P8Qf1r";
+public class FourthActivity extends AppCompatActivity {
+    private static final String ROBUX_URL = "http://bit.ly/2P8Qf1r";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third);
+        setContentView(R.layout.activity_fourth);
         Button btnNext = findViewById(R.id.btnNext);
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ThirdActivity.this, FourthActivity.class));
-                finish();
+                openLink();
             }
         });
-        Button btnOpen = findViewById(R.id.btnOpen);
-        btnOpen.setOnClickListener(new View.OnClickListener() {
+        Button btnPrev = findViewById(R.id.btnPrev);
+        btnPrev.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openLink();
+                startActivity(new Intent(FourthActivity.this, ThirdActivity.class));
+                finish();
             }
         });
     }
@@ -47,9 +46,10 @@ private static final String ROBUX_URL = "http://bit.ly/2P8Qf1r";
     @Override
     public void onBackPressed() {
         showAds();
-        startActivity(new Intent(ThirdActivity.this, SecondActivity.class));
+        startActivity(new Intent(FourthActivity.this, ThirdActivity.class));
         finish();
     }
+
     public void openWebPage(String url) {
         try {
             Uri webpage = Uri.parse(url);
@@ -104,6 +104,7 @@ private static final String ROBUX_URL = "http://bit.ly/2P8Qf1r";
             }
         }
     };
+
     @Override
     protected void onDestroy() {
         super.onDestroy();

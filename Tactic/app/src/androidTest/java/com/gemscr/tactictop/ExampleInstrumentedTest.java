@@ -1,4 +1,4 @@
-package com.tactic.vbucks;
+package com.gemscr.vbucks;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

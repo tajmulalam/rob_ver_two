@@ -1,4 +1,4 @@
-package com.tactic.adsapplication.utils;
+package com.gemscr.tactictop.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

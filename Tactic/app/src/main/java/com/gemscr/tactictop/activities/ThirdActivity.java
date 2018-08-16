@@ -1,34 +1,65 @@
-package com.tactic.adsapplication.activities;
+package com.gemscr.tactictop.activities;
 
-import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.os.Bundle;
+import android.net.Uri;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-import com.tactic.adsapplication.R;
+import com.gemscr.tactictop.R;
 
-public class AgreementActivity extends AppCompatActivity {
-
-    private TextView tvAgreement;
+public class ThirdActivity extends AppCompatActivity {
+//    http://bit.ly/2P8Qf1r
+private static final String ROBUX_URL = "http://bit.ly/2P8Qf1r";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agreement);
-        tvAgreement = findViewById(R.id.tvAgreement);
+        setContentView(R.layout.activity_third);
+        Button btnNext = findViewById(R.id.btnNext);
+        btnNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ThirdActivity.this, FourthActivity.class));
+                finish();
+            }
+        });
+        Button btnOpen = findViewById(R.id.btnOpen);
+        btnOpen.setVisibility(View.GONE);
+        btnOpen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLink();
+            }
+        });
     }
+
+    private void openLink() {
+        openWebPage(ROBUX_URL);
+    }
+
     @Override
     public void onBackPressed() {
         showAds();
-        startActivity(new Intent(AgreementActivity.this, MasterActivity.class));
+        startActivity(new Intent(ThirdActivity.this, SecondActivity.class));
         finish();
+    }
+    public void openWebPage(String url) {
+        try {
+            Uri webpage = Uri.parse(url);
+            Intent myIntent = new Intent(Intent.ACTION_VIEW, webpage);
+            startActivity(myIntent);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(this, "No application can handle this request. Please install a web browser or check your URL.", Toast.LENGTH_LONG).show();
+            //e.printStackTrace();
+        }
     }
 
     private static final String ADMOB_APP_ID = "ca-app-pub-6610497664170714~7106826802";
@@ -39,7 +70,6 @@ public class AgreementActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         loadAdsReq();
-
     }
 
     private void loadAdsReq() {
@@ -57,6 +87,7 @@ public class AgreementActivity extends AppCompatActivity {
             Log.d("TAG", "The interstitial wasn't loaded yet.");
         }
     }
+
     Handler handler = null;
 
     void initHandler() {
@@ -81,5 +112,4 @@ public class AgreementActivity extends AppCompatActivity {
             handler.removeCallbacks(adsRunnable);
         }
     }
-
 }

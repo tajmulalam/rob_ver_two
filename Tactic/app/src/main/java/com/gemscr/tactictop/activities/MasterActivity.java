@@ -1,4 +1,4 @@
-package com.tactic.adsapplication.activities;
+package com.gemscr.tactictop.activities;
 
 import android.app.AlertDialog;
 import android.content.ActivityNotFoundException;
@@ -27,7 +27,7 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
-import com.tactic.adsapplication.R;
+import com.gemscr.tactictop.R;
 
 public class MasterActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
@@ -45,6 +45,7 @@ public class MasterActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ibtnContinue = findViewById(R.id.ibtnContinue);
         ibtnRate = findViewById(R.id.ibtnRate);
+        ibtnRate.setVisibility(View.GONE);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -172,7 +173,7 @@ public class MasterActivity extends AppCompatActivity
     }
 
     private void showPolicyActivity() {
-        startActivity(new Intent(MasterActivity.this,AgreementActivity.class));
+        startActivity(new Intent(MasterActivity.this, AgreementActivity.class));
         finish();
     }
 

@@ -1,16 +1,16 @@
-package com.tactic.adsapplication.activities;
+package com.gemscr.tactictop.activities;
 
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.tactic.adsapplication.R;
+import com.gemscr.tactictop.R;
 
-public class SquadTeamActivity extends Activity {
+public class TipsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_squad_team);
+        setContentView(R.layout.activity_tips);
     }
 }

@@ -1,4 +1,4 @@
-package com.tactic.vbucks;
+package com.gemscr.vbucks;
 
 import org.junit.Test;
 

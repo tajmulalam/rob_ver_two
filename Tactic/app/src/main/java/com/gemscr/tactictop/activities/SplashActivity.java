@@ -1,4 +1,4 @@
-package com.tactic.adsapplication.activities;
+package com.gemscr.tactictop.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,8 +11,8 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.tactic.adsapplication.R;
-import com.tactic.adsapplication.utils.SharedPreferenceValue;
+import com.gemscr.tactictop.R;
+import com.gemscr.tactictop.utils.SharedPreferenceValue;
 
 
 public class SplashActivity extends Activity {

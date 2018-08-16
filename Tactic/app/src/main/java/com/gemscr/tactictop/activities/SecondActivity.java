@@ -1,4 +1,4 @@
-package com.tactic.adsapplication.activities;
+package com.gemscr.tactictop.activities;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -10,7 +10,7 @@ import android.widget.Button;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-import com.tactic.adsapplication.R;
+import com.gemscr.tactictop.R;
 
 public class SecondActivity extends AppCompatActivity {
 

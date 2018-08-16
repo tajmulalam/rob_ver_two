@@ -1,10 +1,10 @@
-package com.tactic.adsapplication.activities;
+package com.gemscr.tactictop.activities;
 
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.tactic.adsapplication.R;
+import com.gemscr.tactictop.R;
 
 public class RobuxGuideActivity extends Activity {
 

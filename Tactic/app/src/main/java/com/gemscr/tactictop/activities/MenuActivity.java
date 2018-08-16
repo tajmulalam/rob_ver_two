@@ -1,4 +1,4 @@
-package com.tactic.adsapplication.activities;
+package com.gemscr.tactictop.activities;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.tactic.adsapplication.R;
+import com.gemscr.tactictop.R;
 
 public class MenuActivity extends Activity implements View.OnClickListener {
 
